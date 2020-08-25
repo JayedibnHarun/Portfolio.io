@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>My Portfolio</title>
+        <link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css" media="all" rel="stylesheet">
+        <link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-font-face.min.css" media="all" rel="stylesheet">
+        <link href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all" rel="stylesheet">
+        <link rel="stylesheet" href="css/animation.css">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+    </head>
+    <body>
+    <!--prallax start-->
+        <section>
+            <img src="images/bg.jpg" id="bg">
+            <img src="images/moon.png" id="moon">
+            <img src="images/mountain.png" id="mountain">
+            <img src="images/road.png" id="road">
+            <h2 id="text">WelCome To <span>Portfolio</span> </h2>
+        </section>
+        <!--Title section-->
+        <div class="title-section">
+            <div class="title">
+                <p>Compliment your ideas with</p>
+            <h1>Perfect business template</h1>
+            </div>
+            <div class="item-main">
+                <div class="title-item wow animate__animated animate__fadeInUp">
+                <span class="fa fa-mobile"></span>
+                <h4>01. Mobile ready</h4><br>
+                <p>Lorem ipsum dolor sit amet, Phasellus id erat eu.</p>
+            </div>
+            <div class="title-item wow animate__animated animate__fadeInUp ">
+                <span class="fa fa-pencil-ruler"></span>
+                <h4>01. Customizable</h4><br>
+                <p>Lorem ipsum dolor sit amet, Phasellus id erat eu.</p>
+            </div>
+            <div class="title-item wow animate__animated animate__fadeInUp">
+                <span class="fa fa-dolly-flatbed"></span>
+                <h4>01. Affordable</h4><br>
+                <p>Lorem ipsum dolor sit amet, Phasellus id erat eu.</p>
+            </div>
+            </div>
+        </div>
+        <!--Content section-->
+        <div id="about" class="body">
+            <div class="content1">
+                <div class="body-text">
+                <h2>About our main company goal</h2>
+                <p>Vivamus fermentum, augue a gravida gravida, odio erat malesuada est, eu condimentum lorem felis sed risus.</p>
+                <table>
+                    <tbody><tr><td><h1> <span class="counter">20</span>+</h1></td>
+                        <td><h1> <span class="counter">15</span>k</h1></td></tr>
+                        <tr>
+                            <td>Investor</td>
+                            <td>Project</td>
+                        </tr>
+                </tbody></table>
+            </div>
+            <div class="pic wow animated" style="visibility: visible;">
+                <img class="wow animate__ animate__fadeInRight" src="images/img1.jpg" alt="" style="visibility: visible; animation-name: fadeInRight;">
+            </div>
+            </div>
+            <div class="content2">
+                <div class="pic">
+                    <img class="wow animate__ animate__fadeInLeft" src="images/img2.jpg" alt="" style="visibility: visible; animation-name: fadeInLeft;">
+                </div>
+                <div class="body-text">
+                    <h2>When you put your mind to it</h2>
+                    <p>Vivamus fermentum, augue a gravida gravida, odio erat malesuada est, eu condimentum lorem felis sed risus.</p>
+                    <br><br><button>Read more</button>
+                </div>
+            </div>
+    <!--vanilla js start-->    
+        <script type="text/javascript">
+        let bg = document.getElementById("bg");
+        let moon = document.getElementById("moon");
+        let mountain = document.getElementById("mountain");
+        let road = document.getElementById("road");
+        let text = document.getElementById("text");
+
+        window.addEventListener('scroll',function(){
+            var value = window.scrollY;
+            bg.style.top = value * 0.5 + 'px' ;
+            moon.style.left = -value * 0.5 + 'px' ;
+            mountain.style.top = -value * 0.15 + 'px' ;
+            road.style.top = value * 0.15 + 'px' ;
+            text.style.top = value * 1 + 'px' ;
+        })
+
+        </script>
+          <script src="js/wow.min.js"></script>
+          <script>
+          new WOW().init();
+          </script>
+<script src="https://kit.fontawesome.com/509539fb79.js" crossorigin="anonymous"></script>
+
+    </body>
+</html>
