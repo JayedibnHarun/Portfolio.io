@@ -144,8 +144,8 @@ section img {
 }
 /*content area*/
 .body {
-
-    color: #fff;
+   width:fit-content;
+   color: #fff;
     margin: 0 auto;
     padding: 50px 0px 150px;
     scroll-behavior: smooth;
